@@ -7,4 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+RUN python test_app.py
+
 CMD ["python", "app.py"]
