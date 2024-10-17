@@ -29,9 +29,9 @@ jobs:
     with:
      context: .
      push: true
-     tags: hubertdziedzic26@gmail.com/flask-app:latest
+     tags: hdziedzic/flask-app:latest
    
   - name: Logout from Docker Hub
-    uses: docker logout
+    run: docker logout
 
 
