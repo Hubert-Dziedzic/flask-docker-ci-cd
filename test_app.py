@@ -5,7 +5,7 @@ class BasicTests(unittest.TestCase):
 	
 	def setUp(self):
 		# set up a test client
-		self.app = app.test_Client()
+		self.app = app.test_client()
 		self.app.testing = True
 	
 	def test_main_page(self):
@@ -15,3 +15,4 @@ class BasicTests(unittest.TestCase):
 	    self.assertEqual(response.data, b'Hello, World!')
 	
 if __name__ == "__main__":
+    unittest.main()
