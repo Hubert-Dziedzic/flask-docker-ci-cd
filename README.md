@@ -26,6 +26,7 @@ This project is a simple Flask web application containerized using Docker. It in
    
    docker build -t flask-docker-app .
    docker run -p 5000:5000 flask-docker-app
+   ```
   The app will be accessible at http://localhost:5000 and will display "Hello, World!".
 
 ## Running Tests
@@ -34,15 +35,16 @@ This project is a simple Flask web application containerized using Docker. It in
 
    ```bash
    docker build -t flask-docker-app --target test .
-
+   ```
 ## Project Structure
-flask-docker-app/ 
-├── app.py # Main Flask application 
-├── Dockerfile # Docker configuration 
-├── requirements.txt # Python dependencies 
-├── test_app.py # Unit tests 
-└── README.md # Project documentation
-
+   ```bash
+  flask-docker-app/
+  ├── app.py              # Main Flask application
+  ├── Dockerfile          # Docker configuration
+  ├── requirements.txt    # Python dependencies
+  ├── test_app.py         # Unit tests
+  └── README.md           # Project documentation
+  ```
 ## Author
 
 - [Hubert Dziedzic](https://github.com/Hubert-Dziedzic)
